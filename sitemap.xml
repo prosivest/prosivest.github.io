@@ -2,6 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://prosivest.github.io/posts/</loc>
+    <lastmod>2025-07-02T20:53:45+08:00</lastmod>
+  </url><url>
+    <loc>https://prosivest.github.io/</loc>
+    <lastmod>2025-07-02T20:53:45+08:00</lastmod>
+  </url><url>
     <loc>https://prosivest.github.io/tags/hugo/</loc>
     <lastmod>2025-07-02T14:48:21+08:00</lastmod>
   </url><url>
@@ -11,17 +17,11 @@
     <loc>https://prosivest.github.io/tags/papermod/</loc>
     <lastmod>2025-07-02T14:48:21+08:00</lastmod>
   </url><url>
-    <loc>https://prosivest.github.io/posts/</loc>
-    <lastmod>2025-07-02T20:05:00+08:00</lastmod>
-  </url><url>
     <loc>https://prosivest.github.io/tags/</loc>
     <lastmod>2025-07-02T20:05:00+08:00</lastmod>
   </url><url>
     <loc>https://prosivest.github.io/tags/%E4%B8%BB%E9%A2%98/</loc>
     <lastmod>2025-07-02T14:48:21+08:00</lastmod>
-  </url><url>
-    <loc>https://prosivest.github.io/</loc>
-    <lastmod>2025-07-02T20:05:00+08:00</lastmod>
   </url><url>
     <loc>https://prosivest.github.io/tags/markdown/</loc>
     <lastmod>2025-07-02T20:05:00+08:00</lastmod>
