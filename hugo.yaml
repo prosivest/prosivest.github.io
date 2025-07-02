@@ -1,0 +1,105 @@
+# 起始 URL（换成自己的域名）
+baseURL: https://prosivest.github.io
+# 语言代码（zh-简体中文）
+languageCode: zh-cn
+#languageCode: en-us
+# 网站标题
+title: 想上天的鱼
+#主题
+theme: hugo-PaperMod
+# 是否启用 Emoji
+enableEmoji: true
+# 压缩输出静态文件
+minify:
+  # 是否不压缩 XML 文件
+  disableXML: true
+  minifyOutput: true
+# 每页显示的文章数量
+pagination:
+  pagerSize: 8
+
+#defaultContentLanguage: zh # 最顶部首先展示的语言页面
+
+menu:
+  main:
+    - identifier: '文章'
+      name: 文章
+      url: /posts
+      weight: 1
+    - identifier: '归档'
+      name: 归档
+      url: /archives
+      weight: 10
+    - identifier: '搜索'
+      name: 搜索
+      url: /search
+      weight: 15
+    - identifier: '标签'
+      name: 标签
+      url: /tags
+      weight: 20
+    - identifier: 'Github'
+      name: Github
+      url: https://github.com/prosivest
+      weight: 30
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+# 全局配置
+params:
+  #设置环境为生产环境
+  env: production
+  # 日期格式
+  DateFormat: 2006-01-02
+  # 默认主题
+  defaultTheme: auto
+  # 是否启用主题切换按钮
+  disableThemeToggle: false
+  # 是否启用面包屑导航
+  ShowBreadCrumbs: true
+  # 是否显示代码复制按钮
+  ShowCodeCopyButtons: true
+  #在帖子下方显示上一条和下一条帖子
+  ShowPostNavLinks: true
+  # 是否显示阅读时间
+  ShowReadingTime: true
+  # 是否显示字数统计
+  ShowWordCount: true
+  # 使用 Hugo 的默认目录树而不是自定义的
+  UseHugoToc: true
+  # 是否禁用首页滚动到顶部
+  disableScrollToTop: false
+  # 禁用首帖无卡特殊外观
+  # disableSpecial1stPost: true
+  # 是否启用分享按钮
+  ShowShareButtons: true
+  # 是否在页面显示 RSS 按钮
+  ShowRssButtonInSectionTermList: true
+  # 是否启用评论系统
+  comments: false
+  # 是否显示目录
+  showtoc: true
+  # 是否默认展开文章目录
+  tocopen: false
+
+
+
+  homeInfoParams:
+    Content: |-
+      - Welcome to my blog   
+      - 欢迎来到我的博客  
+      - 记录 分享 成长   
+      - 如果您有任何问题，请联系我  
+      ✉️ prosivest@hotmail.com
+    Title: Hi there 👋
+  socialIcons:
+    - name: github
+      title: View Source on Github
+      url: https://github.com/prosivest
+    - name: X
+      title: Share PaperMod on X/Twitter
+      url: https://x.com/
