@@ -2,7 +2,7 @@
 author: "想上天的鱼"
 title: "Markdown 示例"
 date: 2025-07-02T08:00:00+08:00
-lastmod : 2025-07-02T08:00:00+08:00
+lastmod : 2025-07-02T20:05:00+08:00
 description: "这是一份Markdown示例"
 tags: ["markdown"]
 ShowToc: true
@@ -57,10 +57,6 @@ int main(int argc , char** argv){
     3. 右手向后用力
 2. 把大象放进冰箱
 3. 关上冰箱
-
-这是行内公式：$m\times n$，这是块级公式：
-
-$C_{m\times k}=A_{m\times n}\cdot B_{n\times k}$
 
 这是一张图片：
 
