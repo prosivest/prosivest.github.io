@@ -1,5 +1,5 @@
 ---
-author: "Hugo Authors"
+author: "想上天的鱼"
 title: "Markdown 示例"
 date: "2019-03-05"
 lastmod : 2025-07-02T08:00:00+08:00
@@ -7,8 +7,9 @@ description: "这是一份Markdown示例"
 tags: ["markdown"]
 ShowToc: true
 ShowBreadCrumbs: false
-draft : true
+draft : false
 ---
+
 
 ## 二级标题
 
@@ -72,6 +73,6 @@ $C_{m\times k}=A_{m\times n}\cdot B_{n\times k}$
 内容单元格 第一列第一格 | 内容单元格第二列第一格
 内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格
 
-水平分割线[^这是脚注]：
+水平分割线：
 
 ------
