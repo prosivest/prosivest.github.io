@@ -1,7 +1,7 @@
 ---
 author: "想上天的鱼"
 title: "Markdown 示例"
-date: "2019-03-05"
+date: 2025-07-02T08:00:00+08:00
 lastmod : 2025-07-02T08:00:00+08:00
 description: "这是一份Markdown示例"
 tags: ["markdown"]
