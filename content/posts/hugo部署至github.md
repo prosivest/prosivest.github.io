@@ -66,8 +66,10 @@ jobs:
           publish_dir: ./public
 ```
 - 注意：`github_token`是github自动生成的，不需要自己创建。你也可以使用`personal_token: ${{ secrets.PERSONAL_TOKEN }}`,需要自己创建一个`PERSONAL_TOKEN`。
-#### 1. 点击账号`Settings`->`Developer settings`->`Personal access tokens`->`Generate new token`，创建时注意期限选择永不过期，勾选`repo`和`workflow`权限。![创建token](https://yhmxx-img.oss-cn-beijing.aliyuncs.com/funtechs/202507030924044.png) 
-#### 2. 点击项目的`Settings`->`Secrets and Variables`->`New repository secret`，创建一个`PERSONAL_TOKEN`，把上面新创建的token值复制进去。![创建secrets.PERSONAL_TOKEN](https://yhmxx-img.oss-cn-beijing.aliyuncs.com/funtechs/202507030928285.png)
+#### 1. 点击账号`Settings`->`Developer settings`->`Personal access tokens`->`Generate new token`，创建时注意期限选择永不过期，勾选`repo`和`workflow`权限。
+![创建token](https://yhmxx-img.oss-cn-beijing.aliyuncs.com/funtechs/202507030924044.png) 
+#### 2. 点击项目的`Settings`->`Secrets and Variables`->`New repository secret`，创建一个`PERSONAL_TOKEN`，把上面新创建的token值复制进去。
+![创建secrets.PERSONAL_TOKEN](https://yhmxx-img.oss-cn-beijing.aliyuncs.com/funtechs/202507030928285.png)
 
 ### 3.2 配置github pages
 可以先修改一次文件，push到github，此时会自动出发github actions，首次可能是会失败，然后修改github pages的配置，在`Build and deployment`中选择`Deploy from a branch`，在下面的branch中选择`gh-pages`（这个是首次运行后自动创建的分支），自动保存后应该就成功了。
