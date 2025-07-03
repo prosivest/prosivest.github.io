@@ -6,8 +6,15 @@
     <description>Recent content in Posts on 想上天的鱼</description>
     <generator>Hugo -- 0.147.9</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 02 Jul 2025 20:05:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 02 Jul 2025 20:53:45 +0800</lastBuildDate>
     <atom:link href="https://prosivest.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo部署至github</title>
+      <link>https://prosivest.github.io/posts/hugo%E9%83%A8%E7%BD%B2%E8%87%B3github/</link>
+      <pubDate>Wed, 02 Jul 2025 20:53:45 +0800</pubDate>
+      <guid>https://prosivest.github.io/posts/hugo%E9%83%A8%E7%BD%B2%E8%87%B3github/</guid>
+      <description>Hugo部署至github的方法步骤</description>
+    </item>
     <item>
       <title>Hugo主题优化</title>
       <link>https://prosivest.github.io/posts/hugo%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</link>

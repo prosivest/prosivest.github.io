@@ -6,12 +6,19 @@
     <description>Recent content in Tags on 想上天的鱼</description>
     <generator>Hugo -- 0.147.9</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 02 Jul 2025 20:05:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 02 Jul 2025 20:53:45 +0800</lastBuildDate>
     <atom:link href="https://prosivest.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Github</title>
+      <link>https://prosivest.github.io/tags/github/</link>
+      <pubDate>Wed, 02 Jul 2025 20:53:45 +0800</pubDate>
+      <guid>https://prosivest.github.io/tags/github/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Hugo</title>
       <link>https://prosivest.github.io/tags/hugo/</link>
-      <pubDate>Wed, 02 Jul 2025 14:48:21 +0800</pubDate>
+      <pubDate>Wed, 02 Jul 2025 20:53:45 +0800</pubDate>
       <guid>https://prosivest.github.io/tags/hugo/</guid>
       <description></description>
     </item>
