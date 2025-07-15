@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>小游戏 on 想上天的鱼</title>
+    <link>https://prosivest.github.io/tags/%E5%B0%8F%E6%B8%B8%E6%88%8F/</link>
+    <description>Recent content in 小游戏 on 想上天的鱼</description>
+    <generator>Hugo -- 0.147.9</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 11 Jul 2025 09:34:00 +0800</lastBuildDate>
+    <atom:link href="https://prosivest.github.io/tags/%E5%B0%8F%E6%B8%B8%E6%88%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>摸鱼小游戏</title>
+      <link>https://prosivest.github.io/posts/%E6%91%B8%E9%B1%BC%E5%B0%8F%E6%B8%B8%E6%88%8F/</link>
+      <pubDate>Fri, 11 Jul 2025 09:34:00 +0800</pubDate>
+      <guid>https://prosivest.github.io/posts/%E6%91%B8%E9%B1%BC%E5%B0%8F%E6%B8%B8%E6%88%8F/</guid>
+      <description>收集的摸鱼小游戏</description>
+    </item>
+  </channel>
+</rss>
