@@ -1,3 +1,17 @@
+---
+date : 2025-07-15T12:37:52+08:00
+lastmod : 2025-07-15T12:37:52+08:00
+title : 'Hugo侧边目录'
+description : "" # 文章描述，与搜索优化相关
+author : ["想上天的鱼"]
+tags: ["markdown"]
+ShowToc: true
+draft : false
+---
+# 1. 添加toc.html
+
+在`layouts/partials`目录下新建`toc.html`文件，内容如下：
+```html
 {{- $headers := findRE "<h[1-6].*?>(.|\n])+?</h[1-6]>" .Content -}}
 {{- $has_headers := ge (len $headers) 1 -}}
 {{- if $has_headers -}}
@@ -152,3 +166,90 @@
     }
 </script>
 {{- end }}
+```
+# 2. 添加css文件
+在`assets/css/extended`目录下新建`blank.css`文件，内容如下：
+```css
+:root {
+    --nav-width: 1380px;
+    --article-width: 650px;
+    --toc-width: 300px;
+}
+
+.toc {
+    margin: 0 2px 40px 2px;
+    border: 1px solid var(--border);
+    background: var(--entry);
+    border-radius: var(--radius);
+    padding: 0.4em;
+}
+
+.toc-container.wide {
+    position: absolute;
+    height: 100%;
+    border-right: 1px solid var(--border);
+    left: calc((var(--toc-width) + var(--gap)) * -1);
+    top: calc(var(--gap) * 2);
+    width: var(--toc-width);
+}
+
+.wide .toc {
+    position: sticky;
+    top: var(--gap);
+    border: unset;
+    background: unset;
+    border-radius: unset;
+    width: 100%;
+    margin: 0 2px 40px 2px;
+}
+
+.toc details summary {
+    cursor: zoom-in;
+    margin-inline-start: 20px;
+    padding: 12px 0;
+}
+
+.toc details[open] summary {
+    font-weight: 500;
+}
+
+.toc-container.wide .toc .inner {
+    margin: 0;
+}
+
+.active {
+    font-size: 110%;
+    font-weight: 600;
+}
+
+.toc ul {
+    list-style-type: circle;
+}
+
+.toc .inner {
+    margin: 0 0 0 20px;
+    padding: 0px 15px 15px 20px;
+    font-size: 16px;
+}
+
+.toc li ul {
+    margin-inline-start: calc(var(--gap) * 0.5);
+    list-style-type: none;
+}
+
+.toc li {
+    list-style: none;
+    font-size: 0.95rem;
+    padding-bottom: 5px;
+}
+
+.toc li a:hover {
+    color: var(--secondary);
+}
+
+```
+
+保存即可，至此已经完成侧边目录的修改。
+
+# 参考
+https://www.333rd.net/zh/posts/tech/hugo%E4%BE%A7%E8%BE%B9%E7%9B%AE%E5%BD%95/
