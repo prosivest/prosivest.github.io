@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>目录 on 想上天的鱼</title>
+    <link>https://prosivest.github.io/tags/%E7%9B%AE%E5%BD%95/</link>
+    <description>Recent content in 目录 on 想上天的鱼</description>
+    <generator>Hugo -- 0.147.9</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 15 Jul 2025 12:37:52 +0800</lastBuildDate>
+    <atom:link href="https://prosivest.github.io/tags/%E7%9B%AE%E5%BD%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hugo侧边目录</title>
+      <link>https://prosivest.github.io/posts/hugo%E4%BE%A7%E8%BE%B9%E7%9B%AE%E5%BD%95/</link>
+      <pubDate>Tue, 15 Jul 2025 12:37:52 +0800</pubDate>
+      <guid>https://prosivest.github.io/posts/hugo%E4%BE%A7%E8%BE%B9%E7%9B%AE%E5%BD%95/</guid>
+      <description>Hugo修改侧边目录</description>
+    </item>
+  </channel>
+</rss>
