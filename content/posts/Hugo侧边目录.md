@@ -2,9 +2,9 @@
 date : 2025-07-15T12:37:52+08:00
 lastmod : 2025-07-15T12:37:52+08:00
 title : 'Hugo侧边目录'
-description : "" # 文章描述，与搜索优化相关
+description : "Hugo修改侧边目录" # 文章描述，与搜索优化相关
 author : ["想上天的鱼"]
-tags: ["markdown"]
+tags: ["hugo","目录"]
 ShowToc: true
 draft : false
 ---
