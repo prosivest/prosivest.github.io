@@ -1,0 +1,19 @@
+# Hugo 构建产物 (本地调试生成的，不需要推送到源码分支)
+.hugo_build.lock
+hugo.exe
+
+# 操作系统生成的垃圾文件
+.DS_Store
+Thumbs.db
+
+# VS Code 配置文件 (个人偏好设置，通常不需要同步)
+#.vscode/
+
+# # Node.js 依赖 (如果你用了 npm 安装某些插件)
+# node_modules/
+
+# # 你的敏感文件 (如果有 VPS 相关的脚本或密钥)
+# vps_deploy_key
+# vps_deploy_key.pub
+# .env
+# secret.sh
