@@ -1,6 +1,6 @@
 ---
 date : 2025-07-02T14:48:21+08:00
-lastmod : 2025-07-02T14:48:21+08:00
+lastmod : 2026-01-07 15:00:38
 title : 'Hugo主题优化'
 description : "修改部分PaperMod主题样式" # 文章描述，与搜索优化相关
 author : ["想上天的鱼"]
@@ -11,6 +11,12 @@ draft : false
 
 ## 1. 时间轴中文化
 
+
+**2026-01-07 14:19:44**
+
+在配置文件中添加此配置`defaultContentLanguage: zh`，即可解决，无需更改主题文件。
+
+---
 使用基本配置时存在一个问题，时间轴月份仍然为英文，可以修改`layouts/_default/archives.html` 中代码实现月份显示中文。[参考链接](https://cloud.tencent.com/developer/article/1956256)
 
 代码如下:
