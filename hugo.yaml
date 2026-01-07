@@ -6,7 +6,7 @@ languageCode: zh-cn
 # 网站标题
 title: 想上天的鱼
 #主题
-theme: hugo-PaperMod
+theme: PaperMod
 # 是否启用 Emoji
 enableEmoji: true
 # 压缩输出静态文件
@@ -18,28 +18,23 @@ minify:
 pagination:
   pagerSize: 8
 
-#defaultContentLanguage: zh # 最顶部首先展示的语言页面
+defaultContentLanguage: zh # 最顶部首先展示的语言页面
 
 menu:
   main:
-    - identifier: '文章'
-      name: 文章
-      url: /posts
+    - name: 文章
+      url: posts/
       weight: 1
-    - identifier: '归档'
-      name: 归档
-      url: /archives
+    - name: 归档
+      url: archives/
       weight: 10
-    - identifier: '搜索'
-      name: 搜索
-      url: /search
+    - name: 标签
+      url: tags/
       weight: 15
-    - identifier: '标签'
-      name: 标签
-      url: /tags
+    - name: 搜索
+      url: search/
       weight: 20
-    - identifier: 'Github'
-      name: Github
+    - name: Github
       url: https://github.com/prosivest
       weight: 30
 
@@ -85,6 +80,7 @@ params:
   showtoc: true
   # 是否默认展开文章目录
   tocopen: true
+  ShowPageNums: true
 
 
 
