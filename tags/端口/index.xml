@@ -21,26 +21,38 @@
 &lt;p&gt;虽然 &lt;code&gt;firewall-cmd&lt;/code&gt; 查不到，但你可以通过以下几种底层方式验证端口是否在系统层面被开放：&lt;/p&gt;
 &lt;h2 id=&#34;1-直接查看-iptables-的-nat-表最底层真相&#34;&gt;1. &lt;strong&gt;直接查看 iptables 的 nat 表（最底层真相）&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;Docker 的端口映射主要在 &lt;code&gt;nat&lt;/code&gt; 表中做 DNAT（目标地址转换）。你可以使用以下命令查看：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```bash
-iptables -t nat -L -n | grep DOCKER
-```
-
-或者查看 Docker 专门的过滤链规则：
-
-```bash
-iptables -L DOCKER -n
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;2-查看系统网络监听状态&#34;&gt;2. &lt;strong&gt;查看系统网络监听状态&lt;/strong&gt;&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;iptables -t nat -L -n &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; grep DOCKER
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;或者查看 Docker 专门的过滤链规则：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;iptables -L DOCKER -n
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;2-查看系统网络监听状态&#34;&gt;2. &lt;strong&gt;查看系统网络监听状态&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;使用 &lt;code&gt;netstat&lt;/code&gt; 或 &lt;code&gt;ss&lt;/code&gt; 命令可以看到 Docker 代理进程（&lt;code&gt;docker-proxy&lt;/code&gt;）是否正在监听宿主机的端口：&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;```bash
-netstat -tulnp | grep docker
-# 或者
-ss -tulnp | grep docker
-
-```
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;3-使用-docker-命令查看&#34;&gt;3. &lt;strong&gt;使用 Docker 命令查看&lt;/strong&gt;&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;netstat -tulnp &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; grep docker
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;或者
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ss -tulnp &lt;span class=&#34;p&#34;&gt;|&lt;/span&gt; grep docker
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;3-使用-docker-命令查看&#34;&gt;3. &lt;strong&gt;使用 Docker 命令查看&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;当然，最直接的方法是查询 Docker 自身的配置：&lt;/p&gt;</description>
     </item>
   </channel>
