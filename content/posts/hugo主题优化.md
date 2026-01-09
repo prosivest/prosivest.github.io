@@ -112,7 +112,7 @@ draft : false
 
 原主题并没有显示「修改时间」的功能，在 `layouts/partials/post_meta.html` 中加入以下内容即可：
 
-```html
+```go
 {{ if ne (.Lastmod.Format "2006-01-02") (.Date.Format "2006-01-02") }}
 {{- $scratch.Add "meta" (slice (printf "Updated:&nbsp;%s" (.Lastmod.Format (.Site.Params.dateFormat | default "January 2, 2006")))) }}
 {{- end -}}
