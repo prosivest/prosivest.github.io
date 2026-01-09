@@ -6,8 +6,43 @@
     <description>Recent content on 想上天的鱼</description>
     <generator>Hugo -- 0.154.3</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 09 Jan 2026 09:24:51 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 09 Jan 2026 09:33:37 +0800</lastBuildDate>
     <atom:link href="https://prosivest.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker中开放的端口使用firewall cmd  --list all命令无法查到</title>
+      <link>https://prosivest.github.io/posts/docker%E4%B8%AD%E5%BC%80%E6%94%BE%E7%9A%84%E7%AB%AF%E5%8F%A3%E4%BD%BF%E7%94%A8firewall-cmd---list-all%E5%91%BD%E4%BB%A4%E6%97%A0%E6%B3%95%E6%9F%A5%E5%88%B0/</link>
+      <pubDate>Fri, 09 Jan 2026 09:33:37 +0800</pubDate>
+      <guid>https://prosivest.github.io/posts/docker%E4%B8%AD%E5%BC%80%E6%94%BE%E7%9A%84%E7%AB%AF%E5%8F%A3%E4%BD%BF%E7%94%A8firewall-cmd---list-all%E5%91%BD%E4%BB%A4%E6%97%A0%E6%B3%95%E6%9F%A5%E5%88%B0/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;参考chatgpt 5.2&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;因为它只列出 Firewalld 自己管理的规则，而不显示其他程序（如 Docker）直接插入到内核 iptables 表中的规则。&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&#34;如何正确查看到这些端口规则&#34;&gt;如何正确查看到这些端口规则？&lt;/h1&gt;
+&lt;p&gt;虽然 &lt;code&gt;firewall-cmd&lt;/code&gt; 查不到，但你可以通过以下几种底层方式验证端口是否在系统层面被开放：&lt;/p&gt;
+&lt;h2 id=&#34;1-直接查看-iptables-的-nat-表最底层真相&#34;&gt;1. &lt;strong&gt;直接查看 iptables 的 nat 表（最底层真相）&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Docker 的端口映射主要在 &lt;code&gt;nat&lt;/code&gt; 表中做 DNAT（目标地址转换）。你可以使用以下命令查看：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```bash
+iptables -t nat -L -n | grep DOCKER
+```
+
+或者查看 Docker 专门的过滤链规则：
+
+```bash
+iptables -L DOCKER -n
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;2-查看系统网络监听状态&#34;&gt;2. &lt;strong&gt;查看系统网络监听状态&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;使用 &lt;code&gt;netstat&lt;/code&gt; 或 &lt;code&gt;ss&lt;/code&gt; 命令可以看到 Docker 代理进程（&lt;code&gt;docker-proxy&lt;/code&gt;）是否正在监听宿主机的端口：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;```bash
+netstat -tulnp | grep docker
+# 或者
+ss -tulnp | grep docker
+
+```
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;3-使用-docker-命令查看&#34;&gt;3. &lt;strong&gt;使用 Docker 命令查看&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;当然，最直接的方法是查询 Docker 自身的配置：&lt;/p&gt;</description>
+    </item>
     <item>
       <title>VPS通过Certbot自动申请及更新HTTPS网站SSL证书</title>
       <link>https://prosivest.github.io/posts/vps%E9%80%9A%E8%BF%87certbot%E8%87%AA%E5%8A%A8%E7%94%B3%E8%AF%B7%E5%8F%8A%E6%9B%B4%E6%96%B0https%E7%BD%91%E7%AB%99ssl%E8%AF%81%E4%B9%A6/</link>
