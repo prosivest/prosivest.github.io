@@ -22,35 +22,35 @@ draft : false
 ## 1. **直接查看 iptables 的 nat 表（最底层真相）**
 Docker 的端口映射主要在 `nat` 表中做 DNAT（目标地址转换）。你可以使用以下命令查看：
     
-    ```bash
-    iptables -t nat -L -n | grep DOCKER
-    ```
+```bash
+iptables -t nat -L -n | grep DOCKER
+```
     
-    或者查看 Docker 专门的过滤链规则：
+或者查看 Docker 专门的过滤链规则：
     
-    ```bash
-    iptables -L DOCKER -n
-    ```
+```bash
+iptables -L DOCKER -n
+```
     
 ## 2. **查看系统网络监听状态**
 使用 `netstat` 或 `ss` 命令可以看到 Docker 代理进程（`docker-proxy`）是否正在监听宿主机的端口：
     
-    ```bash
-    netstat -tulnp | grep docker
-    # 或者
-    ss -tulnp | grep docker
-    
-    ```
+```bash
+netstat -tulnp | grep docker
+或者
+ss -tulnp | grep docker
+
+```
     
 ## 3. **使用 Docker 命令查看**
 当然，最直接的方法是查询 Docker 自身的配置：
     
-    ```bash
-    docker ps
-    
-    ```
-    
-    输出中的 `PORTS` 一列会明确显示如 `0.0.0.0:8080->80/tcp` 的映射关系，这代表该端口已对宿主机所有网卡开放。
+```bash
+docker ps
+
+```
+
+输出中的 `PORTS` 一列会明确显示如 `0.0.0.0:8080->80/tcp` 的映射关系，这代表该端口已对宿主机所有网卡开放。
     
 
 # 重要的安全隐患：Docker 穿透防火墙
@@ -71,19 +71,19 @@ Docker 的端口映射主要在 `nat` 表中做 DNAT（目标地址转换）。�
 ## 1. **方案一：在启动容器时绑定特定 IP（推荐）**
 这是最简单且副作用最小的方法。不要使用默认的 `p 8080:80`（这意味着绑定 `0.0.0.0`，即所有 IP），而是显式绑定到回环地址：
     
-    ```bash
-    docker run -p 127.0.0.1:8080:80 ...
-    ```
-    
-    这样端口只对宿主机内部开放。然后你可以利用 Nginx 在宿主机做反向代理，或者手动配置 Firewalld 的规则将特定流量转发给这个 localhost 端口。
+```bash
+docker run -p 127.0.0.1:8080:80 ...
+```
+
+这样端口只对宿主机内部开放。然后你可以利用 Nginx 在宿主机做反向代理，或者手动配置 Firewalld 的规则将特定流量转发给这个 localhost 端口。
     
 ## 2. **方案二：利用 DOCKER-USER 链（高级）**
 Docker 官方预留了一个名为 `DOCKER-USER` 的 iptables 链，它位于 Docker 规则的最前面。Docker 每次重启网络时不会重置这个链。你可以在这里添加 iptables 规则来限制访问。
 例如，只允许 `192.168.1.100` 访问容器网络：
     
-    ```bash
-    iptables -I DOCKER-USER -i eth0 ! -s 192.168.1.100 -j DROP
-    ```
+```bash
+iptables -I DOCKER-USER -i eth0 ! -s 192.168.1.100 -j DROP
+```
     
 ## 3. **方案三：禁用 Docker 的 iptables 管理（慎用）**
 修改 `/etc/docker/daemon.json`，添加配置 `"iptables": false`。

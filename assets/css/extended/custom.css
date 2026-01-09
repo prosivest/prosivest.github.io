@@ -1,0 +1,9 @@
+/* 强制覆盖所有行内代码样式 */
+.post-content :not(pre) > code {
+  color: #d32f2f !important;        /* 红色文字 */
+  background-color: #ffebee !important; /* 淡红背景 */
+  padding: 0.2em 0.4em !important;
+  border-radius: 4px !important;
+  font-size: 0.95em !important;
+  font-family: "Fira Code", "JetBrains Mono", Consolas, "Courier New", monospace !important;
+}
