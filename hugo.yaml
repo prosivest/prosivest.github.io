@@ -35,7 +35,7 @@ menu:
       url: search/
       weight: 20
     - name: 💡关于
-      url: about/
+      url: /about/
       weight: 25
     - name: 导航
       url: https://mhx.edu.deal/
