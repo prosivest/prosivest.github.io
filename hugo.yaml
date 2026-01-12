@@ -34,9 +34,15 @@ menu:
     - name: 搜索
       url: search/
       weight: 20
+    - name: 💡关于
+      url: about/
+      weight: 25
+    - name: 导航
+      url: https://mhx.edu.deal/
+      weight: 30
     - name: Github
       url: https://github.com/prosivest
-      weight: 30
+      weight: 35
 
 outputs:
   home:
