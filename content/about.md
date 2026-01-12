@@ -10,9 +10,9 @@ draft : true
 ---
 **Welcome to my blog**   
 
-- 欢迎来到我的博客  
+> Three passions, simple but overwhelmingly strong, have governed my life:the longing for love, the search for knowledge, and unbearable pity for the suffering of mankind.
 
-- 记录 分享 成长   
+- 记录 分享 成长  
 
 - 如果您有任何问题，请联系我
       
