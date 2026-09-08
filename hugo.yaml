@@ -88,11 +88,16 @@ params:
   tocopen: true
   ShowPageNums: true
 
-
+  # === 新增作者信息 ===
+  author:
+    name: "想上天的鱼"
+    email: "prosivest@hotmail.com"
+    link: "https://github.com/prosivest"
+  # =================
 
   homeInfoParams:
     Title: Hi there 👋
-    Content: > 
+    Content: >
 
       - **Welcome to my blog**   
 
@@ -101,9 +106,9 @@ params:
       - 记录 分享 成长   
 
       - 如果您有任何问题，请联系我
-      
+
       - ✉️ prosivest@hotmail.com
-    
+
   socialIcons:
     - name: github
       title: View Source on Github
@@ -112,16 +117,15 @@ params:
       title: Share PaperMod on X/Twitter
       url: https://x.com/
 
-
 markup:
-    goldmark:
-        renderer:
-            unsafe: true # HUGO 默认转义 Markdown 文件中的 HTML 代码，如需开启的话
-    highlight:
-        # anchorLineNos: true
-        codeFences: true # 代码围栏功能，这个功能一般都要设为 true 的，不然很难看，就是干巴巴的-代码文字，没有颜色。
-        guessSyntax: true # 猜测语法
-        lineNos: true     # 显示行号
-        noClasses: false # 使用 class 标签，而不是内嵌的内联样式
-        # style: monokai
-        style: darcula
+  goldmark:
+    renderer:
+      unsafe: true # HUGO 默认转义 Markdown 文件中的 HTML 代码，如需开启的话
+  highlight:
+    # anchorLineNos: true
+    codeFences: true # 代码围栏功能，这个功能一般都要设为 true 的，不然很难看，就是干巴巴的-代码文字，没有颜色。
+    guessSyntax: true # 猜测语法
+    lineNos: true # 显示行号
+    noClasses: false # 使用 class 标签，而不是内嵌的内联样式
+    # style: monokai
+    style: darcula
