@@ -4,8 +4,10 @@
     <title>Categories on 想上天的鱼</title>
     <link>https://prosivest.github.io/categories/</link>
     <description>Recent content in Categories on 想上天的鱼</description>
-    <generator>Hugo -- 0.154.5</generator>
+    <generator>Hugo -- 0.165.0</generator>
     <language>zh-cn</language>
+    <managingEditor>prosivest@hotmail.com (想上天的鱼)</managingEditor>
+    <webMaster>prosivest@hotmail.com (想上天的鱼)</webMaster>
     <atom:link href="https://prosivest.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

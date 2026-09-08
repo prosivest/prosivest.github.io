@@ -4,14 +4,16 @@
     <title>PaperMod on 想上天的鱼</title>
     <link>https://prosivest.github.io/tags/papermod/</link>
     <description>Recent content in PaperMod on 想上天的鱼</description>
-    <generator>Hugo -- 0.154.5</generator>
+    <generator>Hugo -- 0.165.0</generator>
     <language>zh-cn</language>
+    <managingEditor>prosivest@hotmail.com (想上天的鱼)</managingEditor>
+    <webMaster>prosivest@hotmail.com (想上天的鱼)</webMaster>
     <lastBuildDate>Fri, 09 Jan 2026 16:24:40 +0000</lastBuildDate>
     <atom:link href="https://prosivest.github.io/tags/papermod/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo主题优化</title>
       <link>https://prosivest.github.io/posts/hugo%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</link>
-      <pubDate>Wed, 02 Jul 2025 14:48:21 +0800</pubDate>
+      <pubDate>Wed, 02 Jul 2025 14:48:21 +0800</pubDate><author>prosivest@hotmail.com (想上天的鱼)</author>
       <guid>https://prosivest.github.io/posts/hugo%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</guid>
       <description>修改部分PaperMod主题样式</description>
     </item>

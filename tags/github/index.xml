@@ -4,14 +4,16 @@
     <title>Github on 想上天的鱼</title>
     <link>https://prosivest.github.io/tags/github/</link>
     <description>Recent content in Github on 想上天的鱼</description>
-    <generator>Hugo -- 0.154.5</generator>
+    <generator>Hugo -- 0.165.0</generator>
     <language>zh-cn</language>
+    <managingEditor>prosivest@hotmail.com (想上天的鱼)</managingEditor>
+    <webMaster>prosivest@hotmail.com (想上天的鱼)</webMaster>
     <lastBuildDate>Wed, 02 Jul 2025 20:53:45 +0800</lastBuildDate>
     <atom:link href="https://prosivest.github.io/tags/github/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo部署至github</title>
       <link>https://prosivest.github.io/posts/hugo%E9%83%A8%E7%BD%B2%E8%87%B3github/</link>
-      <pubDate>Wed, 02 Jul 2025 20:53:45 +0800</pubDate>
+      <pubDate>Wed, 02 Jul 2025 20:53:45 +0800</pubDate><author>prosivest@hotmail.com (想上天的鱼)</author>
       <guid>https://prosivest.github.io/posts/hugo%E9%83%A8%E7%BD%B2%E8%87%B3github/</guid>
       <description>Hugo部署至github的方法步骤</description>
     </item>

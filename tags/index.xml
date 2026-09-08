@@ -4,105 +4,142 @@
     <title>Tags on 想上天的鱼</title>
     <link>https://prosivest.github.io/tags/</link>
     <description>Recent content in Tags on 想上天的鱼</description>
-    <generator>Hugo -- 0.154.5</generator>
+    <generator>Hugo -- 0.165.0</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 09 Jan 2026 16:24:40 +0000</lastBuildDate>
+    <managingEditor>prosivest@hotmail.com (想上天的鱼)</managingEditor>
+    <webMaster>prosivest@hotmail.com (想上天的鱼)</webMaster>
+    <lastBuildDate>Tue, 08 Sep 2026 15:55:09 +0800</lastBuildDate>
     <atom:link href="https://prosivest.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Docker</title>
       <link>https://prosivest.github.io/tags/docker/</link>
-      <pubDate>Fri, 09 Jan 2026 09:33:37 +0800</pubDate>
+      <pubDate>Tue, 08 Sep 2026 15:55:09 +0800</pubDate><author>prosivest@hotmail.com (想上天的鱼)</author>
       <guid>https://prosivest.github.io/tags/docker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Immich</title>
+      <link>https://prosivest.github.io/tags/immich/</link>
+      <pubDate>Tue, 08 Sep 2026 15:55:09 +0800</pubDate><author>prosivest@hotmail.com (想上天的鱼)</author>
+      <guid>https://prosivest.github.io/tags/immich/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>NAS</title>
+      <link>https://prosivest.github.io/tags/nas/</link>
+      <pubDate>Tue, 08 Sep 2026 15:55:09 +0800</pubDate><author>prosivest@hotmail.com (想上天的鱼)</author>
+      <guid>https://prosivest.github.io/tags/nas/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>反向地理编码</title>
+      <link>https://prosivest.github.io/tags/%E5%8F%8D%E5%90%91%E5%9C%B0%E7%90%86%E7%BC%96%E7%A0%81/</link>
+      <pubDate>Tue, 08 Sep 2026 15:55:09 +0800</pubDate><author>prosivest@hotmail.com (想上天的鱼)</author>
+      <guid>https://prosivest.github.io/tags/%E5%8F%8D%E5%90%91%E5%9C%B0%E7%90%86%E7%BC%96%E7%A0%81/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>群晖</title>
+      <link>https://prosivest.github.io/tags/%E7%BE%A4%E6%99%96/</link>
+      <pubDate>Tue, 08 Sep 2026 15:55:09 +0800</pubDate><author>prosivest@hotmail.com (想上天的鱼)</author>
+      <guid>https://prosivest.github.io/tags/%E7%BE%A4%E6%99%96/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>照片管理</title>
+      <link>https://prosivest.github.io/tags/%E7%85%A7%E7%89%87%E7%AE%A1%E7%90%86/</link>
+      <pubDate>Tue, 08 Sep 2026 15:55:09 +0800</pubDate><author>prosivest@hotmail.com (想上天的鱼)</author>
+      <guid>https://prosivest.github.io/tags/%E7%85%A7%E7%89%87%E7%AE%A1%E7%90%86/</guid>
       <description></description>
     </item>
     <item>
       <title>端口</title>
       <link>https://prosivest.github.io/tags/%E7%AB%AF%E5%8F%A3/</link>
-      <pubDate>Fri, 09 Jan 2026 09:33:37 +0800</pubDate>
+      <pubDate>Fri, 09 Jan 2026 09:33:37 +0800</pubDate><author>prosivest@hotmail.com (想上天的鱼)</author>
       <guid>https://prosivest.github.io/tags/%E7%AB%AF%E5%8F%A3/</guid>
       <description></description>
     </item>
     <item>
       <title>防火墙</title>
       <link>https://prosivest.github.io/tags/%E9%98%B2%E7%81%AB%E5%A2%99/</link>
-      <pubDate>Fri, 09 Jan 2026 09:33:37 +0800</pubDate>
+      <pubDate>Fri, 09 Jan 2026 09:33:37 +0800</pubDate><author>prosivest@hotmail.com (想上天的鱼)</author>
       <guid>https://prosivest.github.io/tags/%E9%98%B2%E7%81%AB%E5%A2%99/</guid>
       <description></description>
     </item>
     <item>
       <title>SSL证书</title>
       <link>https://prosivest.github.io/tags/ssl%E8%AF%81%E4%B9%A6/</link>
-      <pubDate>Fri, 09 Jan 2026 09:24:51 +0800</pubDate>
+      <pubDate>Fri, 09 Jan 2026 09:24:51 +0800</pubDate><author>prosivest@hotmail.com (想上天的鱼)</author>
       <guid>https://prosivest.github.io/tags/ssl%E8%AF%81%E4%B9%A6/</guid>
       <description></description>
     </item>
     <item>
       <title>VPS</title>
       <link>https://prosivest.github.io/tags/vps/</link>
-      <pubDate>Fri, 09 Jan 2026 09:24:51 +0800</pubDate>
+      <pubDate>Fri, 09 Jan 2026 09:24:51 +0800</pubDate><author>prosivest@hotmail.com (想上天的鱼)</author>
       <guid>https://prosivest.github.io/tags/vps/</guid>
       <description></description>
     </item>
     <item>
       <title>Hugo</title>
       <link>https://prosivest.github.io/tags/hugo/</link>
-      <pubDate>Tue, 15 Jul 2025 12:37:52 +0800</pubDate>
+      <pubDate>Tue, 15 Jul 2025 12:37:52 +0800</pubDate><author>prosivest@hotmail.com (想上天的鱼)</author>
       <guid>https://prosivest.github.io/tags/hugo/</guid>
       <description></description>
     </item>
     <item>
       <title>目录</title>
       <link>https://prosivest.github.io/tags/%E7%9B%AE%E5%BD%95/</link>
-      <pubDate>Tue, 15 Jul 2025 12:37:52 +0800</pubDate>
+      <pubDate>Tue, 15 Jul 2025 12:37:52 +0800</pubDate><author>prosivest@hotmail.com (想上天的鱼)</author>
       <guid>https://prosivest.github.io/tags/%E7%9B%AE%E5%BD%95/</guid>
       <description></description>
     </item>
     <item>
       <title>日常</title>
       <link>https://prosivest.github.io/tags/%E6%97%A5%E5%B8%B8/</link>
-      <pubDate>Tue, 15 Jul 2025 11:44:51 +0800</pubDate>
+      <pubDate>Tue, 15 Jul 2025 11:44:51 +0800</pubDate><author>prosivest@hotmail.com (想上天的鱼)</author>
       <guid>https://prosivest.github.io/tags/%E6%97%A5%E5%B8%B8/</guid>
       <description></description>
     </item>
     <item>
       <title>摸鱼</title>
       <link>https://prosivest.github.io/tags/%E6%91%B8%E9%B1%BC/</link>
-      <pubDate>Fri, 11 Jul 2025 09:34:00 +0800</pubDate>
+      <pubDate>Fri, 11 Jul 2025 09:34:00 +0800</pubDate><author>prosivest@hotmail.com (想上天的鱼)</author>
       <guid>https://prosivest.github.io/tags/%E6%91%B8%E9%B1%BC/</guid>
       <description></description>
     </item>
     <item>
       <title>小游戏</title>
       <link>https://prosivest.github.io/tags/%E5%B0%8F%E6%B8%B8%E6%88%8F/</link>
-      <pubDate>Fri, 11 Jul 2025 09:34:00 +0800</pubDate>
+      <pubDate>Fri, 11 Jul 2025 09:34:00 +0800</pubDate><author>prosivest@hotmail.com (想上天的鱼)</author>
       <guid>https://prosivest.github.io/tags/%E5%B0%8F%E6%B8%B8%E6%88%8F/</guid>
       <description></description>
     </item>
     <item>
       <title>Github</title>
       <link>https://prosivest.github.io/tags/github/</link>
-      <pubDate>Wed, 02 Jul 2025 20:53:45 +0800</pubDate>
+      <pubDate>Wed, 02 Jul 2025 20:53:45 +0800</pubDate><author>prosivest@hotmail.com (想上天的鱼)</author>
       <guid>https://prosivest.github.io/tags/github/</guid>
       <description></description>
     </item>
     <item>
       <title>PaperMod</title>
       <link>https://prosivest.github.io/tags/papermod/</link>
-      <pubDate>Wed, 02 Jul 2025 14:48:21 +0800</pubDate>
+      <pubDate>Wed, 02 Jul 2025 14:48:21 +0800</pubDate><author>prosivest@hotmail.com (想上天的鱼)</author>
       <guid>https://prosivest.github.io/tags/papermod/</guid>
       <description></description>
     </item>
     <item>
       <title>主题</title>
       <link>https://prosivest.github.io/tags/%E4%B8%BB%E9%A2%98/</link>
-      <pubDate>Wed, 02 Jul 2025 14:48:21 +0800</pubDate>
+      <pubDate>Wed, 02 Jul 2025 14:48:21 +0800</pubDate><author>prosivest@hotmail.com (想上天的鱼)</author>
       <guid>https://prosivest.github.io/tags/%E4%B8%BB%E9%A2%98/</guid>
       <description></description>
     </item>
     <item>
       <title>Markdown</title>
       <link>https://prosivest.github.io/tags/markdown/</link>
-      <pubDate>Wed, 02 Jul 2025 08:00:00 +0800</pubDate>
+      <pubDate>Wed, 02 Jul 2025 08:00:00 +0800</pubDate><author>prosivest@hotmail.com (想上天的鱼)</author>
       <guid>https://prosivest.github.io/tags/markdown/</guid>
       <description></description>
     </item>

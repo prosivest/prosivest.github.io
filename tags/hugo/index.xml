@@ -4,28 +4,30 @@
     <title>Hugo on 想上天的鱼</title>
     <link>https://prosivest.github.io/tags/hugo/</link>
     <description>Recent content in Hugo on 想上天的鱼</description>
-    <generator>Hugo -- 0.154.5</generator>
+    <generator>Hugo -- 0.165.0</generator>
     <language>zh-cn</language>
+    <managingEditor>prosivest@hotmail.com (想上天的鱼)</managingEditor>
+    <webMaster>prosivest@hotmail.com (想上天的鱼)</webMaster>
     <lastBuildDate>Fri, 09 Jan 2026 16:24:40 +0000</lastBuildDate>
     <atom:link href="https://prosivest.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hugo侧边目录</title>
       <link>https://prosivest.github.io/posts/hugo%E4%BE%A7%E8%BE%B9%E7%9B%AE%E5%BD%95/</link>
-      <pubDate>Tue, 15 Jul 2025 12:37:52 +0800</pubDate>
+      <pubDate>Tue, 15 Jul 2025 12:37:52 +0800</pubDate><author>prosivest@hotmail.com (想上天的鱼)</author>
       <guid>https://prosivest.github.io/posts/hugo%E4%BE%A7%E8%BE%B9%E7%9B%AE%E5%BD%95/</guid>
       <description>Hugo修改侧边目录</description>
     </item>
     <item>
       <title>Hugo部署至github</title>
       <link>https://prosivest.github.io/posts/hugo%E9%83%A8%E7%BD%B2%E8%87%B3github/</link>
-      <pubDate>Wed, 02 Jul 2025 20:53:45 +0800</pubDate>
+      <pubDate>Wed, 02 Jul 2025 20:53:45 +0800</pubDate><author>prosivest@hotmail.com (想上天的鱼)</author>
       <guid>https://prosivest.github.io/posts/hugo%E9%83%A8%E7%BD%B2%E8%87%B3github/</guid>
       <description>Hugo部署至github的方法步骤</description>
     </item>
     <item>
       <title>Hugo主题优化</title>
       <link>https://prosivest.github.io/posts/hugo%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</link>
-      <pubDate>Wed, 02 Jul 2025 14:48:21 +0800</pubDate>
+      <pubDate>Wed, 02 Jul 2025 14:48:21 +0800</pubDate><author>prosivest@hotmail.com (想上天的鱼)</author>
       <guid>https://prosivest.github.io/posts/hugo%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</guid>
       <description>修改部分PaperMod主题样式</description>
     </item>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>反向地理编码 on 想上天的鱼</title>
+    <link>https://prosivest.github.io/tags/%E5%8F%8D%E5%90%91%E5%9C%B0%E7%90%86%E7%BC%96%E7%A0%81/</link>
+    <description>Recent content in 反向地理编码 on 想上天的鱼</description>
+    <generator>Hugo -- 0.165.0</generator>
+    <language>zh-cn</language>
+    <managingEditor>prosivest@hotmail.com (想上天的鱼)</managingEditor>
+    <webMaster>prosivest@hotmail.com (想上天的鱼)</webMaster>
+    <lastBuildDate>Tue, 08 Sep 2026 15:55:09 +0800</lastBuildDate>
+    <atom:link href="https://prosivest.github.io/tags/%E5%8F%8D%E5%90%91%E5%9C%B0%E7%90%86%E7%BC%96%E7%A0%81/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>群晖NAS使用Docker部署immich</title>
+      <link>https://prosivest.github.io/posts/%E7%BE%A4%E6%99%96nas%E4%BD%BF%E7%94%A8docker%E9%83%A8%E7%BD%B2immich/</link>
+      <pubDate>Tue, 08 Sep 2026 15:55:09 +0800</pubDate><author>prosivest@hotmail.com (想上天的鱼)</author>
+      <guid>https://prosivest.github.io/posts/%E7%BE%A4%E6%99%96nas%E4%BD%BF%E7%94%A8docker%E9%83%A8%E7%BD%B2immich/</guid>
+      <description>记录在群晖 NAS 上使用 Docker 部署 immich 的完整步骤，包括环境变量配置、容器启动和照片存储路径设置，并结合反向地理编码汉化方案提升中文体验。</description>
+    </item>
+  </channel>
+</rss>

@@ -4,14 +4,16 @@
     <title>Markdown on 想上天的鱼</title>
     <link>https://prosivest.github.io/tags/markdown/</link>
     <description>Recent content in Markdown on 想上天的鱼</description>
-    <generator>Hugo -- 0.154.5</generator>
+    <generator>Hugo -- 0.165.0</generator>
     <language>zh-cn</language>
+    <managingEditor>prosivest@hotmail.com (想上天的鱼)</managingEditor>
+    <webMaster>prosivest@hotmail.com (想上天的鱼)</webMaster>
     <lastBuildDate>Wed, 02 Jul 2025 20:05:00 +0800</lastBuildDate>
     <atom:link href="https://prosivest.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Markdown 示例</title>
       <link>https://prosivest.github.io/posts/markdown-%E7%A4%BA%E4%BE%8B/</link>
-      <pubDate>Wed, 02 Jul 2025 08:00:00 +0800</pubDate>
+      <pubDate>Wed, 02 Jul 2025 08:00:00 +0800</pubDate><author>prosivest@hotmail.com (想上天的鱼)</author>
       <guid>https://prosivest.github.io/posts/markdown-%E7%A4%BA%E4%BE%8B/</guid>
       <description>这是一份Markdown示例</description>
     </item>

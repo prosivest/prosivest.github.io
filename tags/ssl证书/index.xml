@@ -4,14 +4,16 @@
     <title>SSL证书 on 想上天的鱼</title>
     <link>https://prosivest.github.io/tags/ssl%E8%AF%81%E4%B9%A6/</link>
     <description>Recent content in SSL证书 on 想上天的鱼</description>
-    <generator>Hugo -- 0.154.5</generator>
+    <generator>Hugo -- 0.165.0</generator>
     <language>zh-cn</language>
+    <managingEditor>prosivest@hotmail.com (想上天的鱼)</managingEditor>
+    <webMaster>prosivest@hotmail.com (想上天的鱼)</webMaster>
     <lastBuildDate>Fri, 09 Jan 2026 09:24:51 +0800</lastBuildDate>
     <atom:link href="https://prosivest.github.io/tags/ssl%E8%AF%81%E4%B9%A6/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>VPS通过Certbot自动申请及更新HTTPS网站SSL证书</title>
       <link>https://prosivest.github.io/posts/vps%E9%80%9A%E8%BF%87certbot%E8%87%AA%E5%8A%A8%E7%94%B3%E8%AF%B7%E5%8F%8A%E6%9B%B4%E6%96%B0https%E7%BD%91%E7%AB%99ssl%E8%AF%81%E4%B9%A6/</link>
-      <pubDate>Fri, 09 Jan 2026 09:24:51 +0800</pubDate>
+      <pubDate>Fri, 09 Jan 2026 09:24:51 +0800</pubDate><author>prosivest@hotmail.com (想上天的鱼)</author>
       <guid>https://prosivest.github.io/posts/vps%E9%80%9A%E8%BF%87certbot%E8%87%AA%E5%8A%A8%E7%94%B3%E8%AF%B7%E5%8F%8A%E6%9B%B4%E6%96%B0https%E7%BD%91%E7%AB%99ssl%E8%AF%81%E4%B9%A6/</guid>
       <description>&lt;blockquote&gt;
 &lt;p&gt;参考：&lt;a href=&#34;https://developer.aliyun.com/article/1676749&#34;&gt;https://developer.aliyun.com/article/1676749&lt;/a&gt;&lt;/p&gt;
