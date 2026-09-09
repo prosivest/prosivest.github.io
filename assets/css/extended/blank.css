@@ -79,3 +79,11 @@
     max-height: calc(100vh - 140px);
     overflow-y: auto;
 }
+
+/* .post-content {
+    font-family: "LXGW WenKai", "PingFang SC", "Microsoft YaHei", sans-serif;
+} */
+
+body {
+    font-family: "LXGW WenKai", "PingFang SC", "Microsoft YaHei", serif;
+}
