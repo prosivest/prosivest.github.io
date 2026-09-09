@@ -74,3 +74,8 @@
 .toc li a:hover {
     color: var(--secondary);
 }
+/* 宽屏侧边目录过长时独立滚动 */
+.toc-container.wide .toc .inner {
+    max-height: calc(100vh - 140px);
+    overflow-y: auto;
+}

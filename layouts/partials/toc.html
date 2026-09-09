@@ -92,6 +92,7 @@
         </details>
     </div>
 </aside>
+<!--
 <script>
     let activeElement;
     let elements;
@@ -108,25 +109,25 @@
     window.addEventListener('resize', function(event) {
         checkTocPosition();
     }, false);
+    // 原始的滚动监听代码，存在问题，导致在滚动时无法正确更新目录的高亮状态
+    // window.addEventListener('scroll', () => {
+    //     // Check if there is an object in the top half of the screen or keep the last item active
+    //     activeElement = Array.from(elements).find((element) => {
+    //         if ((getOffsetTop(element) - window.pageYOffset) >= 0 && 
+    //             (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
+    //             return element;
+    //         }
+    //     }) || activeElement
 
-    window.addEventListener('scroll', () => {
-        // Check if there is an object in the top half of the screen or keep the last item active
-        activeElement = Array.from(elements).find((element) => {
-            if ((getOffsetTop(element) - window.pageYOffset) > 0 && 
-                (getOffsetTop(element) - window.pageYOffset) < window.innerHeight/2) {
-                return element;
-            }
-        }) || activeElement
-
-        elements.forEach(element => {
-             const id = encodeURI(element.getAttribute('id')).toLowerCase();
-             if (element === activeElement){
-                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
-             } else {
-                 document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
-             }
-         })
-     }, false);
+    //     elements.forEach(element => {
+    //          const id = encodeURI(element.getAttribute('id')).toLowerCase();
+    //          if (element === activeElement){
+    //              document.querySelector(`.inner ul li a[href="#${id}"]`).classList.add('active');
+    //          } else {
+    //              document.querySelector(`.inner ul li a[href="#${id}"]`).classList.remove('active');
+    //          }
+    //      })
+    //  }, false);
 
     const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
     const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
@@ -151,4 +152,161 @@
         return rect.top + win.pageYOffset;   
     }
 </script>
+-->
+
+
+<script>
+    let activeElement;
+    let elements;
+    let offsetCache = null;
+    let clickScrollTimer;
+
+    function findStickyHeader() {
+        // 优先找 position: fixed/sticky 且在顶部（top:0）的导航栏
+        const candidates = document.querySelectorAll(
+            'header, .header, .nav, .top-nav, .site-header, .main-header, nav, [class*="header"], [class*="nav"]'
+        );
+        for (const el of candidates) {
+            const style = window.getComputedStyle(el);
+            const pos = style.position;
+            const top = parseInt(style.top, 10) || 0;
+            if ((pos === 'fixed' || pos === 'sticky') && top <= 0) {
+                return el;
+            }
+        }
+        return document.querySelector('header, .header, nav');
+    }
+
+    function getActivationOffset() {
+        if (offsetCache === null) {
+            const header = findStickyHeader();
+            if (header) {
+                const style = window.getComputedStyle(header);
+                const height = header.getBoundingClientRect().height;
+                const marginBottom = parseInt(style.marginBottom, 10) || 0;
+                offsetCache = Math.ceil(height + marginBottom) + 40; // 40px 缓冲
+            } else {
+                offsetCache = 150; // 保守回退
+            }
+            console.log('[TOC] activation offset =', offsetCache);
+        }
+        return offsetCache;
+    }
+
+    function applyScrollMargin() {
+        const offset = getActivationOffset();
+        elements.forEach(h => {
+            h.style.scrollMarginTop = `${offset}px`;
+        });
+    }
+
+    function updateActiveClass() {
+        elements.forEach(el => {
+            const id = encodeURI(el.getAttribute('id')).toLowerCase();
+            const link = document.querySelector(`.inner ul li a[href="#${id}"]`);
+            if (link) {
+                link.classList.toggle('active', el === activeElement);
+            }
+        });
+    }
+
+    function setActive(element) {
+        if (!element || element === activeElement) return;
+        activeElement = element;
+        updateActiveClass();
+    }
+
+    function bindTocLinks() {
+        document.querySelectorAll('.toc .inner a[href^="#"]').forEach(link => {
+            link.addEventListener('click', () => {
+                const rawId = link.getAttribute('href').slice(1);
+                const decodedId = decodeURIComponent(rawId);
+                const target = Array.from(elements).find(el => {
+                    const elId = el.getAttribute('id') || '';
+                    return elId === rawId || elId === decodedId ||
+                           elId.toLowerCase() === rawId.toLowerCase() ||
+                           elId.toLowerCase() === decodedId.toLowerCase();
+                });
+                if (target) {
+                    setActive(target);
+                    // 平滑滚动期间禁用滚动算法，防止它覆盖点击结果
+                    clearTimeout(clickScrollTimer);
+                    clickScrollTimer = setTimeout(() => {}, 800);
+                }
+            });
+        });
+    }
+
+    window.addEventListener('DOMContentLoaded', function (event) {
+        checkTocPosition();
+
+        elements = document.querySelectorAll('h1[id],h2[id],h3[id],h4[id],h5[id],h6[id]');
+        applyScrollMargin();
+        bindTocLinks();
+
+        activeElement = elements[0];
+        updateActiveClass();
+    }, false);
+
+    window.addEventListener('resize', function(event) {
+        offsetCache = null;
+        applyScrollMargin();
+        checkTocPosition();
+    }, false);
+
+    window.addEventListener('scroll', () => {
+        if (clickScrollTimer) return;
+
+        const OFFSET = getActivationOffset();
+        const scrollPos = window.pageYOffset;
+        let current = null;
+
+        elements.forEach(element => {
+            if (getOffsetTop(element) - scrollPos <= OFFSET) {
+                current = element;
+            }
+        });
+
+        if (!current) {
+            current = elements[0];
+        }
+
+        const docHeight = Math.max(
+            document.body.scrollHeight,
+            document.body.offsetHeight,
+            document.documentElement.scrollHeight,
+            document.documentElement.offsetHeight
+        );
+        if (window.innerHeight + scrollPos >= docHeight - 2) {
+            current = elements[elements.length - 1];
+        }
+
+        setActive(current);
+    }, false);
+
+    const main = parseInt(getComputedStyle(document.body).getPropertyValue('--article-width'), 10);
+    const toc = parseInt(getComputedStyle(document.body).getPropertyValue('--toc-width'), 10);
+    const gap = parseInt(getComputedStyle(document.body).getPropertyValue('--gap'), 10);
+
+    function checkTocPosition() {
+        const width = document.body.scrollWidth;
+        if (width - main - (toc * 2) - (gap * 4) > 0) {
+            document.getElementById("toc-container").classList.add("wide");
+        } else {
+            document.getElementById("toc-container").classList.remove("wide");
+        }
+    }
+
+    function getOffsetTop(element) {
+        if (!element.getClientRects().length) {
+            return 0;
+        }
+        let rect = element.getBoundingClientRect();
+        let win = element.ownerDocument.defaultView;
+        return rect.top + win.pageYOffset;
+    }
+</script>
+
+
+
 {{- end }}
